@@ -1,8 +1,7 @@
-// pages/static.tsx
+import { NextPage, GetStaticProps } from "next";
+import { ReactNode, useEffect, useState } from "react";
+import { Col, Container, Row } from "react-bootstrap";
 
-import { NextPage, GetStaticProps } from "next"
-import { useEffect, useState, ReactNode } from "react"
-import { Col, Container, Row } from "react-bootstrap"
 
 type ApiResponse = {
   name: string
@@ -43,13 +42,15 @@ const Static: NextPage = (props: {
       <Row>
         <Col>
           <h3>
-          Gerado estaticamente durante o build: {props.staticData?.timestamp.toString()}
+            Gerado estaticamente durante o build:
+            <p>{props.staticData?.timestamp.toString()}</p>
           </h3>
         </Col>
 
         <Col>
           <h3>
-            Gerado no cliente: {clientSideData?.timestamp.toString()}
+            Gerado no cliente: 
+            <p>{clientSideData?.timestamp.toString()}</p>
           </h3>
         </Col>
       </Row>
