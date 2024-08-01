@@ -1,6 +1,6 @@
 import { GetServerSideProps, NextPage } from "next";
 import { ReactNode, useEffect, useState } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "reactstrap";
 
 interface ApiResponse {
     name:string 

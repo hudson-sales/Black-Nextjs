@@ -1,14 +1,17 @@
+import Header from "../src/components/Header"
 import { NextPage } from "next"
-import Header from "next/head"
+import Head from "next/head"
 
 const Cart: NextPage = () => {
     return (
         <>
-            <Header>
+            <Head>
                 <title>Nossos Produtos</title>
                 <meta name="description" content="Meu carrinho de compras" />
                 <link rel="icon" href="/favicon.ico" />
-            </Header>
+            </Head>
+
+            <Header/>    
 
             <h1>
                 Carrinho

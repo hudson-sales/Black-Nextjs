@@ -1,6 +1,6 @@
 import { NextPage, GetStaticProps } from "next";
 import { ReactNode, useEffect, useState } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "reactstrap";
 
 
 type ApiResponse = {
@@ -35,7 +35,7 @@ const Static: NextPage = (props: {
   }
 
   return (
-    <Container>
+    <Container tag="main">
       <h1 className="my-5">
         Como funcionam as renderizações do Next.js
       </h1>
@@ -44,15 +44,15 @@ const Static: NextPage = (props: {
         <Col>
           <h3>
             Gerado estaticamente durante o build:
-            <p>{props.staticData?.timestamp.toString()}</p>
           </h3>
+          <p> {props.staticData?.timestamp.toString()}</p>
         </Col>
 
         <Col>
           <h3>
             Gerado no cliente: 
-            <p>{clientSideData?.timestamp.toString()}</p>
           </h3>
+          <p>{clientSideData?.timestamp.toString()}</p>
         </Col>
       </Row>
     </Container>

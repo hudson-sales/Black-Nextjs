@@ -1,0 +1,19 @@
+******* Comandos para criação do projeto com Next *******
+
+1 - npx create-next-app nomeDoProjeto --typescript
+
+**ATENÇÃO!**
+
+Recentemente o Next.js foi atualizado para a versão 13 e o processo de criação de 
+novos projetos está um pouco diferente. Ainda é possível utilizar a mesma estrutura 
+mostrada na aula, com o diretório “pages” e o Boostrap, porém é preciso selecionar
+a opção “No” em duas perguntas realizadas durante a criação, sobre o uso do
+**TailwindCSS** e o sobre o uso do **App Router**. Ao final do módulo teremos
+ aulas extras ensinando a utilizar a nova estrutura de projeto.
+
+2 - npm add bootstrap reactstrap
+
+3 - Na pasta "pages" importe o bootstrap no arquivo global "_app.tsx" 
+    import 'bootstrap/dist/css/bootstrap.min.css
+
+
