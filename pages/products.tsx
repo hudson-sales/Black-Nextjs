@@ -9,7 +9,7 @@ import { ReactNode } from "react"
 export const getStaticProps: GetStaticProps = async () => {
     const products = await fetchProducts()
 
-    return { props: { products} }
+    return { props: { products } }
 }
 
 const Products: NextPage = (props: {
